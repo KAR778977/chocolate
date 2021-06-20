@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Bad Script', cursive;
+	/* background: rgb(242,176,205); */
+	background: radial-gradient(circle, rgba(242,176,205,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1{
+    color: #ffffff ;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+}
+img{
+	height: 300px;
+	width:  300px;
+	display: block;
+}
+.string{
+	display: flex;
+	justify-content: space-around;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.text{
+	font-size: 25px;
+}
+.image:hover{
+	transform:scale(1.2) ;
+	transition-duration: 2s;
+}
+.modal{
+	display: none;
+}
+.active{
+	display: flex;
+	position: fixed;
+	top: 0px;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.close{
+	font-size: 30px;
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+input{
+	margin-bottom: 30px;
+	width: 300px;
+	height: 50px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 700;
+	outline:2px solid; 
+	background: linear-gradient(90deg, rgba(34,0,255,1) 0%, rgba(175,0,255,1) 100%);
+	color: rgb(255, 255, 255);
+}
+button{
+	width: 150px;
+	height: 50px;
+	background: linear-gradient(0deg, rgba(2,255,248,1) 0%, rgba(255,252,2,1) 100%);
+}
